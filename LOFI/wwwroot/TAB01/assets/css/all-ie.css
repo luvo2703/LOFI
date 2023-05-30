@@ -1,0 +1,16 @@
+@charset "utf-8";
+.header-aside ul{ width:360px; display:block;}
+.header-aside ul li + li + li{ width:165px; height:32px;}
+.primary-section{ margin-bottom:15px;}
+.product-des{ margin-top:55px;}
+.search-box li input{ padding-top:3px; }
+.submit { padding-top:0px; border-radius:5px !important; position:relative; behavior: url(file://///192.168.1.233/www/sanjay99/25ds/webgranth/html/assets/css/PIE.htc);}
+.signup ul li input{border-radius:5px !important; position:relative; behavior: url(file://///192.168.1.233/www/sanjay99/25ds/webgranth/html/assets/css/PIE.htc);}
+.nav-section{ padding-bottom:5px;}
+.newrotate{ left:5px; top:7px;}
+.signup ul li input{ padding-top:10px; height: 30px;}
+.addthis_button_facebook_like{ float:left !important;}
+
+
+.fb_iframe_widget{ width: 218px; overflow:hidden;}
+

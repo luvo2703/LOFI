@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to Webgranth</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" media="screen" />
+    <script src="assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="assets/js/slides.min.jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.slides').slides({
+                preload: true,
+                generatePagination: true,
+                play: 3000
+            });
+        });
+    </script>
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="assets/css/all-ie.css" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="assets/css/ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!--Wrapper-->
+    <div id="wrapper">
+        <!--Page-->
+        <div class="page shadow">
+            <!--Header-->
+            <div id="header">
+                <div class="primary-section">
+                    <div class="logo"> <a href="http://www.webgranth.com"><img src="assets/images/logo.png" alt="logo" title="webgranth" /></a></div>
+                    <div class="header-aside">
+                        <span>Call Us: +91 120 4735100</span>
+                        <ul>
+                            <li class="border"><a href="#" class="log"> login </a></li>
+                            <li><a href="#" class="user">register</a></li>
+                            <li class="carts"><a href="#" class="cart">Shopping Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-section">
+                    <ul class="navigation">
+                        <li class="home"><a href="index.html" class="home">Home </a></li>
+                        <li><a href="#">Service </a></li>
+                        <li><a href="#">Shops </a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">New Products </a></li>
+                        <li><a href="#">Specials </a></li>
+                        <li><a href="#">Contact </a></li>
+                    </ul>
+                    <ul class="search-box">
+                        <li>
+                            <input type="text" value="search" id="user_search" autocomplete="off" onkeypress="submitenter_search(event);" onblur="if (this.value=='')this.value='search';" onfocus="if (this.value=='search')this.value=''" />
+                        </li>
+                        <li class="sms-last">
+                            <input type="submit" value="" class="submit" />
+                            <a href="#"> search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Header-->
+            <!--Content-->
+            <div id="content">
+                <div class="sidebar">
+                    <div class="latest-product">
+                        <h2>Best Selling</h2>
+                        <ul>
+                            <li>
+                                <img src="assets/images/valky.jpg" alt="valky" title="prodcut" />
+                                <div class="p-info"><span>Latest Apple iPhone 3G</span><small> &amp;190 </small></div>
+                            </li>
+                            <li>
+                                <img src="assets/images/cell.jpg" alt="cell" title="product" class="c-cell" />
+                                <div class="p-info"><span>Latest Apple iPhone 3G</span><small>&amp;190</small></div>
+                            </li>
+                            <li>
+                                <img src="assets/images/cell-btn.jpg" alt="btn" title="product" class="c-btn" />
+                                <div class="p-info"><span>Latest Apple iPhone 3G</span><small>&amp;190</small></div>
+                            </li>
+                        </ul>
+                        <a href="#">View More <span> &raquo; </span></a>
+                    </div>
+                    <div class="latest-product ">
+                        <h2>Our Services</h2>
+                        <ul class="info">
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Laptop</a></li>
+                            <li><a href="#">Camera</a></li>
+                            <li><a href="#">Ipod</a></li>
+                            <li><a href="#">gravida auctor</a></li>
+                        </ul>
+                        <a href="#" class="auct">View More <span>&raquo;</span></a>
+                    </div>
+                    <div class="latest-product f-des">
+                        <h2>Best Selling</h2>
+                        <div class="plugin">
+                            <div id="fb-root"></div>
+                            <div class="fb-like-box" data-href="http://www.facebook.com/webgranth" data-width="289" data-show-faces="true" data-stream="false" data-header="true"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    
+
+                    @RenderBody()
+
+
+                </div>
+            </div>
+            <!-- Content-->
+        </div>
+        <!--Footer-->
+        <div id="footer">
+            <div class="footer-top">
+                <div class="page">
+                    <div class="f-nav-section">
+                        <ul>
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="#">Service </a></li>
+                            <li><a href="#">Shops </a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">New Products </a></li>
+                            <li><a href="#">Specials </a></li>
+                            <li><a href="#" class="last">Contact </a></li>
+                        </ul>
+                        <div class="signup">
+                            <ul>
+                                <li>
+                                    <label>Sign Up for Newsletter:</label>
+                                </li>
+                                <li>
+                                    <input type="text" value="" id="user_text" autocomplete="off" onkeypress="submitenter_search(event);" onblur="if (this.value=='')this.value='';" onfocus="if (this.value=='')this.value=''" />
+                                </li>
+                                <li class="sms-last"><a href="#" class="sms">sms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <ul>
+                            <li>&copy; 2013 </li>
+                            <li><a href="http://www.webgranth.com" class="select"> Webgranth</a> All Rights Reserved.</li>
+                            <li class="last"><a href="#">Privacy Policy</a> </li>
+                        </ul>
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="twitter"></a></li>
+                            <li class="sms-last"><a href="#" class="bing"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+    </div>
+    <!-- <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5125d19d7877c409"></script>
+    -->
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Wrapper-->
+</body>
+</html>

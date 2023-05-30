@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.newrotate{ left:5px; top:7px;}
+.search-box li input{ padding-top:3px; }
+.submit { padding-top:0px; width:30px !important; border-radius:5px !important; position:relative; behavior: url(PIE.htc);}
+.signup ul li input,.product-info,.fc-platform,.nav-section,.shadow{border-radius:5px !important; position:relative; behavior: url(PIE.htc);}
+.latest-product h2{border-radius:5px 5px 0 0 !important; position:relative; behavior: url(PIE.htc);}
+.signup ul li input{ padding-top:10px; height: 30px;}
