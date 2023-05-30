@@ -9,6 +9,7 @@ namespace LOFI.Controllers
     {
         //private readonly ILogger<HomeController> _logger;
         private readonly AppDBContext _context;
+        private int a = 5;
         public HomeController(AppBDContext context)
         {
             _context = context;
