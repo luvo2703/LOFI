@@ -21,9 +21,6 @@ namespace LOFI.Data
         public DbSet<Category> Categories { get; set; } = null!;
         public DbSet<OrderProduct> OrderProducts { get; set; } = null!;
 
-        public static implicit operator AppDBContext(AppBDContext v)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

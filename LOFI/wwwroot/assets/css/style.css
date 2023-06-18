@@ -402,8 +402,10 @@ body {
 	border-radius:5px;
 }
 .product-info img {
-	display:block;
-	margin:17px auto 11px;
+	display: block;
+	margin: 17px auto 11px;
+	height: 280px;
+	width: 240px;
 }
 .product-info h2 {
 	color:#191919;

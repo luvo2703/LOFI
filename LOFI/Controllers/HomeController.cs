@@ -9,8 +9,7 @@ namespace LOFI.Controllers
     {
         //private readonly ILogger<HomeController> _logger;
         private readonly AppDBContext _context;
-        private int a = 5;
-        public HomeController(AppBDContext context)
+        public HomeController(AppDBContext context)
         {
             _context = context;
         }
@@ -18,6 +17,7 @@ namespace LOFI.Controllers
         public IActionResult Index()
         {
             var prolist = this._context.Products.ToList();
+            //var p =(from c in _context.Products where c.CategoryId == 5 select c).ToList();
             return View(prolist);
         }
 
@@ -31,9 +31,5 @@ namespace LOFI.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-    }
-
-    public class AppBDContext
-    {
     }
 }
